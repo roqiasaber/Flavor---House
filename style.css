@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #111;
+    color: white;
+}
+
+/* Navbar */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     padding: 25px 80px;
+    background: #000;
+    z-index: 1000;
+}
+
+.logo h1{
+    color: white;
+    font-size: 35px;
+}
+
+.logo span{
+    color: #FF6A1C;
+}
+
+.logo p{
+    color: #ccc;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+nav a{
+    color:#FF6A1C;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+nav a:hover{
+    color:white;
+}
+
+/* Hero */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+    background-image: url(home.jpeg);
+}
+
+.hero-text{
+    width: 50%;
+}
+
+.hero-text h3{
+    color: #FF6A1C;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.hero-text h1{
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.hero a{
+    background: #FF6A1C;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hero a:hover{
+    background: #ff9900;
+}
+
+.hero-image{
+    width: 45%;
+}
+
+.hero-image img{
+    width: 100%;
+}
+
+/* About */
+
+.about{
+    padding: 80px 8%;
+    text-align: center;
+    background: #1b1b1b;
+}
+
+.about h2{
+    color: #FF6A1C;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about p{
+    width: 70%;
+    margin: auto;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+/* Menu */
+
+.menu{
+    background: #111;
+    color: black;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.menu h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: #FF6A1C;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 330px;
+    background: #f5efe6;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h2{
+    margin-top: 20px;
+}
+
+.card h3{
+    margin: 15px 0;
+    color: #FF6A1C;
+}
+
+.card a{
+    margin-bottom: 20px;
+    background: #FF6A1C;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+.card a:hover{
+    background: #ff9900;
+}
+
+/* Contact */
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 80px 8%;
+    background: #111;
+    flex-wrap: wrap;
+}
+
+.contact-info{
+    width: 40%;
+}
+
+.contact-info h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #FF6A1C;
+}
+
+.contact-info p{
+    margin-bottom: 15px;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.contact-form{
+    width: 50%;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+}
+
+.contact-form textarea{
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button{
+    background: #FF6A1C;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background: #ff9900;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.hero{
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-text,
+.hero-image{
+    width:100%;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.contact{
+    flex-direction: column;
+}
+
+.contact-info,
+.contact-form{
+    width:100%;
+}
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction: column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    margin:10px;
+    display:inline-block;
+}
+
+.hero h1{
+    font-size:35px;
+}
+
+.menu h1{
+    font-size:38px;
+}
+
+.card{
+    width:100%;
+}
+}

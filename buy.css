@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.buy-container{
+    width: 450px;
+    background: #222;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.buy-container h1{
+    color: #ff9800;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.buy-container p{
+    color: #ddd;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.buy-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.buy-container input,
+.buy-container select{
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #333;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.buy-container input::placeholder{
+    color: #bbb;
+}
+
+.buy-container input:focus,
+.buy-container select:focus{
+    border: 2px solid #ff9800;
+}
+
+.buy-container button{
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-container button:hover{
+    background: #ff9800;
+}
+
+.buy-container a{
+    display: inline-block;
+    margin-top: 20px;
+    color: orange;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.buy-container a:hover{
+    color: white;
+}
+
+@media(max-width:500px){
+
+    .buy-container{
+        width: 90%;
+        padding: 25px;
+    }
+
+    .buy-container h1{
+        font-size: 30px;
+    }
+
+}
